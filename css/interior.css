@@ -1,0 +1,123 @@
+.interior {
+    grid-column: 2/12;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(9, 70px);
+    column-gap: 2.5rem;
+    margin: 14rem 0 12rem 0;
+}
+
+.interior__servicio {
+    grid-column: 1/6;
+    grid-row: 1/-1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.interior__titulo {
+    font-family: var(--lora);
+    font-weight: 500;
+    color: var(--blanco);
+    font-size: 4.8rem;
+}
+
+.interior__detalle {
+    font-family: var(--montserrat);
+    font-weight: 400;
+    font-size: 2.4rem;
+    color: var(--blanco);
+    margin: 4rem 0 4.8rem 0;
+    line-height: 2.9rem;
+}
+
+.interior__enlace {
+    text-decoration: none;
+    color: var(--blanco);
+    font-size: 1.8rem;
+}
+
+
+.interior__disenio {
+    grid-column: 6/-1;
+    grid-row: 1/12;
+}
+.interior__imagen {
+    width: 100%;
+    height: 53rem;
+    object-fit: cover;
+}
+
+
+.interior__diseniador {
+    background-color: var(--negro);
+    grid-column: 9/12;
+    grid-row: 8/10;
+}
+.interior__diseniador-perfil {
+    display: flex;
+    align-items: center;
+}
+.interior__diseniador-avatar {
+    height: 7.2rem;
+    padding: 1rem;
+    border-radius: 4rem;
+}
+.interior__diseniador-datos {
+    color: var(--blanco);
+}
+.interior__diseniador-nombre {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 1.4rem;
+}
+.interior__diseniador-profesion {
+    font-family: var(--montserrat);
+    font-weight: 500;
+    font-size: 1.2rem;
+    color: var(--gris);
+    margin-top: 0.8rem;
+}
+.interior__diseniador-derechos-autor {
+    font-family: var(--lora);
+    font-weight: 700;
+    color: var(--blanco);
+    font-size: 2rem;
+    margin: 1rem 0 0 1rem;
+}
+
+
+@media (max-width:768px) {
+    .interior {
+        grid-template-columns: 1fr;
+        gap: unset;
+        margin: 7rem 0 15rem 0;
+    }
+
+    .interior__servicio {
+        grid-column: 1/12;
+        grid-row: 1/6;
+    }
+    .interior__titulo{
+        font-size: 3.6rem;
+    }
+    .interior__detalle{
+        font-size: 1.4rem;
+    }
+
+    .interior__disenio {
+        grid-column: 1/12;
+        grid-row: 6/11;
+    }
+    .interior__imagen {
+        height: 31.4rem;
+        object-fit: cover;
+    }
+
+    .interior__diseniador {
+        grid-column: 1/12;
+        grid-row: 10/-1;
+        width: 80%;
+        margin: 0 auto;
+    }
+}

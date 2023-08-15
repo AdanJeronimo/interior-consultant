@@ -1,0 +1,46 @@
+:root{
+    --crimson:CrimsonPro, sans-serif;
+    --lora:lora, sans-serif;
+    --montserrat:Montserrat, sans-serif;
+    
+}
+
+
+@font-face {
+    font-family:var(--crimson);
+    src: url(../fonts/CrimsonPro-ExtraLight.ttf);
+    font-weight: 200;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: var(--lora);
+    src: url(../fonts/Lora-Medium.ttf);
+    font-weight: 500;
+    font-size: normal;
+}
+@font-face {
+    font-family: var(--lora);
+    src: url(../fonts/Lora-Bold.ttf);
+    font-weight: 700;
+    font-size: normal;
+}
+
+@font-face {
+    font-family: var(--montserrat);
+    src: url(../fonts/Montserrat-Regular.ttf);
+    font-weight: 400;
+    font-size: normal;
+}
+@font-face {
+    font-family: var(--montserrat);
+    src: url(../fonts/Montserrat-Medium.ttf);
+    font-weight: 500;
+    font-size: normal;
+}
+@font-face {
+    font-family: var(--montserrat);
+    src: url(../fonts/Montserrat-Bold.ttf);
+    font-weight: 700;
+    font-size: normal;
+}
